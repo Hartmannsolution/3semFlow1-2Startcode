@@ -73,6 +73,12 @@ public class MovieResource {
     public String getByName(@PathParam("name") String name) {
         return GSON.toJson(FACADE.getMoviesByName(name));
     }
+//    @Path("test")
+//    @GET
+//    @Produces({MediaType.APPLICATION_JSON})
+//    public String test() {
+//        return GSON.toJson(FACADE.getMoviesByName(name));
+//    }
     
 
     @POST
